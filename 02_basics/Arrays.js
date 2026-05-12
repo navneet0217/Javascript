@@ -33,5 +33,31 @@ const arr = [1, 2, 3, 4, 5, 6];
 
 // console.log("Array after slice", arr);
 
-// console.log("After splice op:", arr.splice(1, 3)); // it includes the element at index 1 and it includes the element at index 3 and also changes the original array 
+// console.log("After splice op:", arr.splice(1, 3)); // it includes the element at index 1 and it includes the element at index 3 and also changes the original array
 // console.log("Array After splice", arr);
+
+const marvel_heroes = ["Thor", "Iron Man", "Hulk", "Spiderman"];
+const dc_heroes = ["Batman", "Superman", "Flash", "Wonder Woman"];
+
+// dc_heroes.push(marvel_heroes);
+// console.log(dc_heroes);
+
+// const all_heroes = dc_heroes.concat(marvel_heroes); //return new array
+// console.log(all_heroes);
+
+// const all_heroes = [...dc_heroes, ...marvel_heroes];  //spread operator more prefered
+// console.log(all_heroes);
+
+//arrays inside array
+
+// const og_array = [1, 2, 3, [4, 5, 6], 7, 8, [9, 10, [11, 12]]];
+// console.log(og_array);
+// const new_array = og_array.flat(Infinity); //when you dont know the depth
+// console.log(new_array);
+
+console.log(Array.isArray("Navneet"));
+console.log(Array.from("Navneet"));
+let score1 = 10;
+let score2 = 20;
+let score3 = 30;
+console.log(Array.of(score1, score2, score3));
